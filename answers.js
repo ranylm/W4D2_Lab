@@ -111,3 +111,12 @@ for( let i = 0 ; i < 20 ; i++){
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+//Expected output: => 15
+nums.sort();
+if (nums.length%2 === 0){
+  console.log(nums[nums.length/2]+nums[(nums.length/2)-1])
+}
+else{
+  console.log(nums[Math.floor(nums.length/2)]);
+}
