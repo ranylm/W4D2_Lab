@@ -42,7 +42,10 @@ console.log(wolfy,sharky,plantee,porgee,dart);
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
-
+const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+for( const Turtles of ninjaTurtles){
+  console.log(Turtles.toUpperCase());
+}
 
 ////////////////////////////////
 // Methods, Revisited
