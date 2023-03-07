@@ -50,7 +50,34 @@ for( const Turtles of ninjaTurtles){
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
-
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+//1
+favMovies.sort(); //sort in place, returns reference to original array which is now sorted
+//2
+favMovies.pop();
+//3
+favMovies.push('Guardians of the Galaxy');
+//4
+favMovies.reverse();
+//5
+favMovies.shift();
+//6
+favMovies.unshift() //returns new length of array 
+//7 yes this did alter our array
+favMovies.splice(favMovies.indexOf('Django Unchained'),1,'Avatar');
+//8 no this did not alter our array
+const slice = favMovies.slice(favMovies.length/2);
+//9 slice returns copy of the sliced portion but does not actually touch original array
+console.log(slice);
+//10
+console.log(favMovies);
+console.log(slice);
+//11 we get -1
+console.log(favMovies.indexOf('Volver'));
+/*12. favMovies is a reference to an array, the reference cannot be changed but
+the contents can be, we can use let if we want to replace the array or 'lose'/delete it
+and reuse the variable for something else
+*/
 
 ////////////////////////////////
 // Where is Waldo
