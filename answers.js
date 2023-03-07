@@ -14,6 +14,16 @@ for( let i = 0 ; i <= 200; i+=2){
 ////////////////////////////////
 // Fizz Buzz
 ////////////////////////////////
+for( let i = 1 ; i <= 100; i++){
+  let str='';
+  if(i%3 === 0) str += 'Fizz';
+  if(i%5 === 0) str += 'Buzz';
+  if( str === '') {
+    console.log(i);
+  } else {
+  console.log(str);
+  }
+}
 
 ////////////////////////////////
 // Wild Wild Life
