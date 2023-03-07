@@ -92,8 +92,22 @@ console.log(whereIsWaldo[2][1][1]);
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
-
-
+//1.
+for( let i = 0 ; i < 20 ; i++){
+  console.log("Love me, pet me! HSSSSSS!");
+}
+//2.
+const catcries = [
+  "...human...why you taking pictures of me?...",
+ "...the catnip made me do it...",
+   "...why does the red dot always get away..."
+  ]
+for( let i = 0 ; i < 20 ; i++){
+  if(i%2 === 0){
+    console.log(catcries[Math.floor(Math.random()* 3)])
+  }
+  console.log("Love me, pet me! HSSSSSS!");
+}
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
